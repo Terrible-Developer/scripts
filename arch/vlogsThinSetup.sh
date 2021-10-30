@@ -14,14 +14,14 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # Creating aliases and other configurations
 echo alias cls="clear" >> $HOME/.zshrc
 
-finalMessage = "The script has finished it's execution.
-\nNow, there are just a few manual steps you need to perform:\n
-For the zsh autocomplete and syntax highlighting plugins, edit the $HOME/.zshrc file, and in the oh-my-zsh plugins section,\n
-add zsh-autosuggestions and zsh-syntax-highlighting.\n
-After that, please reboot the system to complete any shell changes.\n
+FINAL_MESSAGE="The script has finished it's execution.
+Now, there are just a few manual steps you need to perform:
+For the zsh autocomplete and syntax highlighting plugins, edit the $HOME/.zshrc file, and in the oh-my-zsh plugins section,
+add zsh-autosuggestions and zsh-syntax-highlighting.
+After that, please reboot the system to complete any shell changes.
 If there are any errors, please contact the developer."
 
-echo $finalMessage
+echo $FINAL_MESSAGE
 
 # Written by Victor Paro (Terrible-Developer). This script
 # currently has no license, but if it ends up having, it will have a free license like GPL or Apache.
