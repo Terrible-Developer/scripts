@@ -2,10 +2,10 @@
 sudo pacman -S curl git zsh
 
 # Changing default shell to zsh
-chsh -s /bin/zsh && zsh
+chsh -s /bin/zsh
 
 # Installing oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # Installing zsh plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -17,7 +17,9 @@ echo alias cls="clear" >> $HOME/.zshrc
 finalMessage = "The script has finished it's execution.
 \nNow, there are just a few manual steps you need to perform:\n
 For the zsh autocomplete and syntax highlighting plugins, edit the $HOME/.zshrc file, and in the oh-my-zsh plugins section,\n
-add zsh-autosuggestions and zsh-syntax-highlighting."
+add zsh-autosuggestions and zsh-syntax-highlighting.\n
+After that, please reboot the system to complete any shell changes.\n
+If there are any errors, please contact the developer."
 
 echo $finalMessage
 
